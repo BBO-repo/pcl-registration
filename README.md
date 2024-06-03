@@ -3,7 +3,7 @@ Standalone executable performing PCL Normal Distributions Transform and GICP reg
 
 ### Build and run
 ```
-git clone pcl-registration
+git clone https://github.com/BBO-repo/pcl-registration.git
 cd pcl-registration
 mkdir build && cd build && cmake .. && make
 ./align  ../data/16961.280000000.pcd ../data/16961.804000000.pcd
