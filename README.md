@@ -15,3 +15,4 @@ fitness: 0.0455552
 single alignment taken time: 43[ms]
 fitness: 0.0714274
 ```
+![](data/registration-results.gif)
