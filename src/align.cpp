@@ -19,7 +19,8 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr align(pcl::Registration<pcl::PointXYZ, pcl::
   registration->align(*aligned);
   std::chrono::steady_clock::time_point toc = std::chrono::steady_clock::now();
   std::cout << "single alignment taken time: " << std::chrono::duration_cast<std::chrono::milliseconds>(toc-tic).count() << "[ms]" << std::endl;
-  std::cout << "fitness: " << registration->getFitnessScore() << std::endl << std::endl;
+  std::cout << "fitness: " << registration->getFitnessScore() << std::endl;
+  std::cout << "transformation: \n" << registration->getFinalTransformation() << std::endl << std::endl;
 
   return aligned;
 }
